@@ -143,13 +143,13 @@
   width: 226px
 }
 
-button.button_delete img {
+.tasks__item__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.button_delete img:hover {
+.tasks__item__icon:hover {
   transform: rotateZ(0);
 }
 
