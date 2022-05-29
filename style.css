@@ -1,49 +1,63 @@
 /* Basic Style */
+
 .body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .about-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .about-matrix__img {
   width: 100%;
 }
+
 .about-matrix__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.about-matrix { text-align: center;
+  
+  .about-matrix { 
+    text-align: center;
+  }
+  
 }
-}
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .new-task {
   display: flex;
 }
+
 .tasks {
   margin:0;
   padding: 0px;
 }
+
 .tasks__item, .title {
   list-style:none;
 }
+
 .task__item__input, .tasks__item__check, .new-task__input,.button{
   outline:none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -53,10 +67,13 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .title,
 .add-task__caption {
   color: #333;
@@ -67,6 +84,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task__item__input {
   margin: 0;
   font-size: 18px;
@@ -79,29 +97,33 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task__item__input:focus {
   color: #333;
 }
 
 /* New Task */
+
 .add-task__caption {
   display: block;
   margin: 0 0 20px;
 }
+
 .new-task__input {
   width: 318px;
 }
 
 /* Task list */
+
 .tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .tasks__item > * {
   vertical-align: middle;
 }
@@ -109,31 +131,37 @@
 .tasks__item__check {
   margin: 0 10px;
 }
+
 .tasks__item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task__item__input {
   width: 226px
 }
+
 button.button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 button.button_delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .tasks-completed .tasks__item__label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
+
 .tasks .tasks__item .task__item__input {
   display:none
 }
